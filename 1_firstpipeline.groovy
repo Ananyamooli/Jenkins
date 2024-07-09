@@ -1,10 +1,10 @@
 pipeline {
-    agent {
-        label 'java-slave'
-    }
+    agent any
     stages {
-        stage ("BUILD") {
-            echo "helloworld !!!"
+        stage ('FirstStage') {
+            steps {
+                echo "First Pipleline"
+            }
         }
     }
 }
